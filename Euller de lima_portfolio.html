@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Euller Gonçalves de Lima – High Impact Portfolio for Pixida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f5f6; color: #2d3135;}
+    nav { 
+      background: #fff; 
+      color: #2d3135; 
+      position: sticky; 
+      top: 0; z-index: 10;
+      display: flex; justify-content: center; gap: 18px; 
+      border-bottom: 2px solid #edeef0;
+      box-shadow: 0 2px 14px #0001;
+      padding: 13px 0 10px 0; 
+    }
+    nav a {
+      color: #2d3135; 
+      text-decoration: none; 
+      font-weight: bold; 
+      padding: 8px 16px;
+      border-radius: 16px;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover, nav a.active {
+      background: #d14343;
+      color: #fff;
+    }
+    .section { max-width: 1000px; margin: auto; padding: 64px 16px 48px 16px;}
+    .hero { 
+      display: flex; flex-direction: column; align-items: center; text-align: center; background: #fff; color: #2d3135; 
+      padding: 90px 16px 70px 16px; border-radius: 0 0 36px 36px;
+      box-shadow: 0 6px 32px #0001;
+    }
+    .hero .photo { 
+      width: 140px; height: 140px; 
+      background: #edeef0 url('https://via.placeholder.com/140x140.png?text=Photo') center/cover no-repeat; 
+      border-radius: 50%; border: 5px solid #d14343; margin-bottom: 18px;
+    }
+    .hero h1 { font-size: 2.7rem; margin: 0 0 12px 0;}
+    .hero h2 { font-size: 1.28rem; margin: 12px 0 18px 0; font-weight: 400;}
+    .hero .headline { font-size: 1.3rem; color: #d14343; font-weight: 600; margin: 14px 0 14px 0;}
+    .hero .cta { margin-top: 12px; }
+    .hero .cta a { 
+      display: inline-block; background: #d14343; color: #fff; padding: 10px 22px; border-radius: 22px; 
+      font-weight: bold; text-decoration: none; margin: 0 5px; transition: background 0.2s;
+    }
+    .hero .cta a:hover { background: #23262f; color: #fff; }
+    .journey { border-left: 5px solid #d14343; margin-top: 24px;}
+    .milestone {
+      margin-bottom: 44px; padding-left: 26px; position: relative;
+    }
+    .milestone:before {
+      content: ''; position: absolute; left: -15px; top: 7px; width: 18px; height: 18px;
+      background: #fff; border-radius: 50%; border: 4px solid #d14343;
+    }
+    .milestone h3 { margin: 0 0 5px 0; color: #d14343; font-size: 1.12rem;}
+    .milestone p { margin: 0 0 5px 0;}
+    .block-list { display: flex; gap: 30px; flex-wrap: wrap; margin: 42px 0;}
+    .block { 
+      flex: 1 1 250px; background: #fff; border-radius: 14px; padding: 24px 18px; box-shadow: 0 2px 12px #0001;
+      min-width: 250px; margin-bottom: 22px; border-left: 4px solid #d14343;
+    }
+    .block h4 { color: #d14343; margin: 0 0 8px 0; font-size: 1.05rem;}
+    .block ul { margin: 0; padding-left: 16px;}
+    .project-card {
+      background: #fff; border-radius: 10px; box-shadow: 0 2px 12px #0001; padding: 20px 18px 12px 18px;
+      margin-bottom: 26px; border-left: 5px solid #d14343;
+    }
+    .project-card h4 { margin: 0 0 6px 0; color: #d14343; }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 13px; list-style: none; padding-left: 0; margin: 17px 0;}
+    .skill { background: #edeef0; color: #d14343; border-radius: 14px; padding: 8px 15px; font-weight: 600;}
+    .map-row { display: flex; gap: 32px; align-items: center; flex-wrap: wrap;}
+    .countries { font-size: 1.1rem;}
+    .countries span { background: #d14343; color: #fff; border-radius: 9px; padding: 4px 9px; margin: 0 5px;}
+    .value-section { background: #edeef0; border-radius: 18px; padding: 34px 22px; text-align: center; margin-top: 34px;}
+    .value-section h3 { color: #d14343;}
+    .value-section p { font-size: 1.14rem; margin-bottom: 9px;}
+    .contact-section { text-align: center; margin-top: 34px;}
+    .contact-section a { color: #d14343; font-weight: bold; text-decoration: none; }
+    .contact-section a:hover { text-decoration: underline;}
+    @media (max-width: 700px) {
+      .block-list { flex-direction: column; gap: 0;}
+      .map-row { flex-direction: column; gap: 8px;}
+      .hero { padding: 38px 6px 32px 6px;}
+      .section { padding: 35px 5px 24px 5px;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#journey">Journey</a>
+    <a href="#differentials">Why Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#international">International</a>
+    <a href="#value">Value</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="hero" id="hero">
+       <h1>Euller Gonçalves de Lima</h1>
+    <div class="headline">
+      Delivering Impact Where Failure is Not an Option
+    </div>
+    <h2>
+      Electrical Engineer | Embedded Systems | Aerospace & Industrial R&D | Global Impact
+    </h2>
+    <div class="cta">
+      <a href="mailto:euller.goncalves@gmail.com">Contact me</a>
+      <a href="https://linkedin.com/in/eullergoncalves" target="_blank">LinkedIn</a>
+      <!-- <a href="Euller_de_Lima_CV.pdf" target="_blank">Download CV</a> -->
+    </div>
+<div style="margin-top:22px; font-size:1.08rem;">
+  <b>International academic background:</b> Double Bachelor’s Degree in Electronic Engineering (UPE/Brazil & University of Kentucky/USA).<br>
+  Master’s degree validated by the University of Toronto.<br>
+  10+ years engineering complex systems for safety-critical industries in Brazil, Canada, Saudi Arabia and beyond.
+</div>
+
+  </div>
+
+  <!-- JOURNEY / TIMELINE -->
+  <div class="section" id="journey">
+    <h2 style="color:#d14343;">My Journey: Engineering Impact</h2>
+    <div class="journey">
+     <div class="milestone">
+  <h3>Academic Foundation</h3>
+  <p>
+    <b>Double Bachelor’s in Electronic Engineering</b> through a joint program with University of Campina Grande (Brazil) and University of Kentucky (USA).<br>
+    <b>Master’s in Electronic Engineering(UFPE)</b>, <b>validated by University of Toronto (Canada)</b>.<br>
+    Early exposure to international R&D and real-world projects.
+  </p>
+</div>
+
+      <div class="milestone">
+        <h3>Research & Development</h3>
+        <p>Developed and published biomedical instrumentation projects at UFPE, integrating hardware, software (Python), and real-world impact. Led cross-disciplinary teams and presented results at major scientific events.</p>
+      </div>
+      <div class="milestone">
+        <h3>Oil & Gas Innovation</h3>
+        <p>Schlumberger (Saudi Arabia): Responsible for diagnostics, automation and reliability in one of the world’s most safety-demanding industries. Integrated best practices from global operations.</p>
+      </div>
+      <div class="milestone">
+        <h3>Aerospace Excellence</h3>
+        <p>FACC Solutions Canada: Led assembly, validation and diagnostics for aircraft cabin systems, exceeding international standards (FAA/EASA). Drove process efficiency and continuous improvement in a global team.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY ME (Differentials) -->
+  <div class="section" id="differentials">
+    <h2 style="color:#d14343;">What Sets Me Apart</h2>
+    <div class="block-list">
+      <div class="block">
+        <h4>Mission-Critical Mindset</h4>
+        <ul>
+          <li>Flawless execution in environments where quality and reliability are non-negotiable.</li>
+          <li>Embedded systems for aerospace, oil & gas, and advanced industrial R&D.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h4>Results & Impact</h4>
+        <ul>
+          <li>Delivered assembly projects up to 80% faster than targets.</li>
+          <li>Improved process traceability and reduced non-conformities.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h4>Global Recognition</h4>
+        <ul>
+          <li>Master’s validated by University of Toronto.</li>
+          <li>Results delivered in Brazil, Canada, Saudi Arabia, and the U.S.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h4>Advanced Toolset</h4>
+        <ul>
+          <li>Experience with digital twin, ERP/MRP (SAP), traceability systems, technical audits, agile methods.</li>
+          <li>Python for instrumentation and process analytics.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="font-style:italic; color:#666; margin:12px 0 0 2px;">
+      “My journey in aerospace and industrial R&D gives me a unique perspective to solve complex challenges and create value for the evolving automotive world. Euller G. de Lima”
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section" id="projects">
+    <h2 style="color:#d14343;">Key Roles, Responsibilities & Achievements</h2>
+    
+    <!-- FACC AG -->
+    <div class="project-card">
+      <h4>FACC AG – Electrical Cabin Assembler | Sep 2024–Present | Canada</h4>
+      <ul>
+        <li><b>Main duties:</b> Assembly, connection, installation, and testing of electrical systems and interior components for aircraft, strictly following FAA, EASA, and ISO 9001 standards. Rigorously executed technical checklists, participated in audits, collected and analyzed productivity data, interacted with international clients (Bombardier), and trained teams on traceability and documentation best practices.</li>
+        <li><b>Achievements:</b> Led FPS standards audits, raising compliance and reducing non-conformities in critical areas. Designed routines for performance monitoring, resulting in faster leadership decision-making. Surpassed efficiency targets—e.g., delivered the Storage Box with only 20% of the forecasted time, other assemblies reaching 99.76% of targets. Enhanced FACC’s reputation with high traceability, quality, and reliability; received recognition for technical excellence during inspections and certifications.</li>
+      </ul>
+    </div>
+    
+    <!-- UPE Professor & Lab Manager (combined) -->
+    <div class="project-card">
+      <h4>University of Pernambuco (UPE) – Professor of Electronic Engineering & Embedded Systems | Jun 2020–Sep 2024 | Brazil</h4>
+      <ul>
+        <li><b>Main duties:</b> Full professor responsible for teaching undergraduate and graduate courses in Embedded Systems, Microcontrollers, Digital Systems, and Electronic Instrumentation. Led the Electronics Laboratory, managing technical, administrative, and operational activities, including inventory control, calibration, equipment modernization, safety routines, and technical training for staff and students. Designed, validated, and supervised embedded and instrumentation systems for industrial and biomedical applications; managed applied research projects, mentored student teams, and fostered collaboration with industry partners.</li>
+        <li><b>Achievements:</b> Delivered innovative projects using microcontrollers and smart instrumentation, recognized for technical excellence and high standards of traceability and reliability. Reduced implementation time for new experiments, optimized laboratory efficiency, and modernized processes for equipment availability and technical documentation. Secured and led applied research initiatives resulting in national recognition, publications, and high graduate employability. Received formal recognition for fostering an innovation culture and supporting both academic and industrial impact projects.</li>
+      </ul>
+    </div>
+
+    <!-- UFPE R&D -->
+    <div class="project-card">
+      <h4>Federal University of Pernambuco (UFPE) – R&D Engineer / Researcher in Electronic Engineering | Aug 2015–Jun 2020 | Brazil</h4>
+      <ul>
+        <li><b>Main duties:</b> Led end-to-end R&D projects in electronic engineering—from requirements to prototyping and experimental validation. Developed embedded electronic systems (hardware and firmware), integrated sensors, microcontrollers, and real-time biomedical/industrial data acquisition. Created and optimized Python algorithms for signal processing and monitoring; managed technical documentation, risk analysis, and compliance. Collaborated with multidisciplinary teams and transferred technology to industry and healthcare partners.</li>
+        <li><b>Achievements:</b> Delivered working prototypes for portable instrumentation (gait analysis systems, optical oximeters, inertial sensors) applied in hospitals and industrial settings. Created a proprietary Python algorithm for early detection of acute myocardial infarction. Reduced device prototyping time and costs with agile and low-cost platforms. Published and presented results at national biomedical engineering congresses, and supported the team’s technical recognition. Obtained a Master’s in Electronic Engineering (validated by the University of Toronto) and advanced to PhD qualification before taking a full professorship at UPE.</li>
+      </ul>
+    </div>
+    
+    <!-- Schlumberger -->
+    <div class="project-card">
+      <h4>Schlumberger – Reliability Engineer (Global Maintenance Engineer) | Sep 2013–Oct 2014 | Brazil & Saudi Arabia</h4>
+      <ul>
+        <li><b>Main duties:</b> Led preventive, corrective, and predictive maintenance for critical oil & gas equipment (cryogenic pumps, nitrogen pumps, automation, panels, PLCs, and sensors) in both onshore and offshore operations. Conducted root cause and failure analysis (RCM, RCA), designed reliability plans, and recommended risk mitigation. Implemented global maintenance standardization projects and digitalized asset management with CMMS/MAXIMO.</li>
+        <li><b>Achievements:</b> Designed and implemented the global STEM-II manual for nitrogen pumps, reducing corrective downtime by 35% and raising asset availability above global average. Introduced root cause routines and continuous improvement, cutting costs and extending equipment lifespans. Led multinational teams (20+ technicians), delivering training, reliability culture, and QHSE compliance. Recognized for leadership in reliability engineering and technical excellence across global teams.</li>
+      </ul>
+    </div>
+    
+    <div class="skills-list">
+      <span class="skill">Embedded Systems</span>
+      <span class="skill">Electronics & Instrumentation</span>
+      <span class="skill">Diagnostics & Reliability</span>
+      <span class="skill">Teaching & Mentoring</span>
+      <span class="skill">Python & Data Analysis</span>
+      <span class="skill">Technical Documentation</span>
+      <span class="skill">Process Optimization</span>
+      <span class="skill">Automation</span>
+      <span class="skill">International Teams</span>
+      <span class="skill">R&D Project Leadership</span>
+    </div>
+  </div>
+
+  <!-- INTERNATIONAL EXPERIENCE -->
+  <div class="section" id="international">
+    <h2 style="color:#d14343;">International Recognition & Experience</h2>
+    <div class="map-row">
+      <div class="countries">
+        <b>Worked and delivered results in:</b>
+        <span>Brazil</span>
+        <span>Canada</span>
+        <span>Saudi Arabia</span>
+        <span>United States</span>
+      </div>
+      <div>
+        <b>Master’s validated by:</b>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/University_of_Toronto_coat_of_arms.svg" alt="University of Toronto" style="height:32px;vertical-align:middle;">
+        University of Toronto
+      </div>
+    </div>
+    <ul style="margin-top:22px;">
+      <li><b>Canada (FACC Solutions):</b> Led technical documentation and assembly for Bombardier and global clients.</li>
+      <li><b>Saudi Arabia (Schlumberger):</b> Brought reliability and diagnostics to oil & gas in a multicultural team.</li>
+      <li><b>United States:</b> Specialized training, academic exchange, and technical presentations.</li>
+      <li><b>Brazil:</b> R&D, teaching, project leadership, and two international publications.</li>
+    </ul>
+  </div>
+
+  <!-- VALUE SECTION -->
+  <div class="section value-section" id="value">
+    <h3>How I Deliver Value</h3>
+    <p>
+      I bring a proven ability to integrate technology, people and process — delivering impact where quality and innovation define success. My aerospace mindset and global experience empower me to exceed expectations in any engineering consulting challenge.
+    </p>
+    <p>
+      At Pixida, I am ready to bring this mindset and toolkit to accelerate your mission of digital transformation in the automotive world.
+    </p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section contact-section" id="contact">
+    <h2 style="color:#d14343;">Let's Build the Future Together</h2>
+    <p>
+      <b>Email:</b> <a href="mailto:euller.goncalves@gmail.com">euller.goncalves@gmail.com</a><br>
+      <b>LinkedIn:</b> <a href="https://linkedin.com/in/eullergoncalves" target="_blank">linkedin.com/in/eullergoncalves</a>
+    </p>
+  </div>
+</body>
+</html>
